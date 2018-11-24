@@ -4,11 +4,6 @@ $(document).ready(function(){
 		var cityName=$('#input').val();
 		var weatherURL="http://api.openweathermap.org/data/2.5/weather?q="+cityName+"&units=metric&appid=b20804012f604fe0be183fa2719dd840";
 
-
-		console.log(weatherURL);
-
-
-
 		$.ajax({
 			url:weatherURL,
 			success:function(result){
